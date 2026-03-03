@@ -299,7 +299,7 @@ export function ScalingStrategy() {
           {securityLayers.map((layer) => (
             <div
               key={layer.title}
-              className="bg-gradient-to-br from-emerald-500/[0.03] to-transparent border border-white/5 rounded-xl p-5"
+              className="bg-emerald-500/[0.03] border border-white/5 rounded-xl p-5"
             >
               <layer.icon className="w-5 h-5 text-emerald-400 mb-3" />
               <h3 className="text-white text-sm mb-3">{layer.title}</h3>
