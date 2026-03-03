@@ -269,17 +269,11 @@ export function AdminDashboard() {
           </div>
           <ResponsiveContainer width="100%" height={220}>
             <AreaChart data={mrrData}>
-              <defs>
-                <linearGradient id="mrrGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#10b981" stopOpacity={0.3} />
-                  <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
-                </linearGradient>
-              </defs>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.03)" />
               <XAxis dataKey="month" tick={{ fill: "rgba(255,255,255,0.2)", fontSize: 11 }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fill: "rgba(255,255,255,0.2)", fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={(v) => `$${v / 1000}K`} />
               <Tooltip content={<CustomTooltip />} />
-              <Area type="monotone" dataKey="mrr" stroke="#10b981" fill="url(#mrrGrad)" strokeWidth={2} name="MRR" />
+              <Area type="monotone" dataKey="mrr" stroke="#10b981" fill="#10b981" fillOpacity={0.15} strokeWidth={2} name="MRR" />
             </AreaChart>
           </ResponsiveContainer>
         </motion.div>
@@ -303,27 +297,13 @@ export function AdminDashboard() {
           </div>
           <ResponsiveContainer width="100%" height={220}>
             <AreaChart data={activeUsersData}>
-              <defs>
-                <linearGradient id="dauGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#6366f1" stopOpacity={0.3} />
-                  <stop offset="95%" stopColor="#6366f1" stopOpacity={0} />
-                </linearGradient>
-                <linearGradient id="wauGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.2} />
-                  <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0} />
-                </linearGradient>
-                <linearGradient id="mauGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#a855f7" stopOpacity={0.1} />
-                  <stop offset="95%" stopColor="#a855f7" stopOpacity={0} />
-                </linearGradient>
-              </defs>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.03)" />
               <XAxis dataKey="month" tick={{ fill: "rgba(255,255,255,0.2)", fontSize: 11 }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fill: "rgba(255,255,255,0.2)", fontSize: 11 }} axisLine={false} tickLine={false} />
               <Tooltip content={<CustomTooltip />} />
-              <Area type="monotone" dataKey="mau" stroke="#a855f7" fill="url(#mauGrad)" strokeWidth={1.5} name="MAU" />
-              <Area type="monotone" dataKey="wau" stroke="#8b5cf6" fill="url(#wauGrad)" strokeWidth={1.5} name="WAU" />
-              <Area type="monotone" dataKey="dau" stroke="#6366f1" fill="url(#dauGrad)" strokeWidth={2} name="DAU" />
+              <Area type="monotone" dataKey="mau" stroke="#a855f7" fill="#a855f7" fillOpacity={0.08} strokeWidth={1.5} name="MAU" />
+              <Area type="monotone" dataKey="wau" stroke="#8b5cf6" fill="#8b5cf6" fillOpacity={0.1} strokeWidth={1.5} name="WAU" />
+              <Area type="monotone" dataKey="dau" stroke="#6366f1" fill="#6366f1" fillOpacity={0.15} strokeWidth={2} name="DAU" />
             </AreaChart>
           </ResponsiveContainer>
         </motion.div>
@@ -484,7 +464,7 @@ export function AdminDashboard() {
                 {recentWorkspaces.map((ws) => (
                   <tr key={ws.name} className="border-b border-white/5 last:border-0 hover:bg-white/[0.02]">
                     <td className="px-5 py-3 text-white/70 flex items-center gap-2">
-                      <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center text-[10px] text-indigo-300">
+                      <div className="w-6 h-6 rounded-lg bg-indigo-500/20 flex items-center justify-center text-[10px] text-indigo-300">
                         {ws.name[0]}
                       </div>
                       {ws.name}
