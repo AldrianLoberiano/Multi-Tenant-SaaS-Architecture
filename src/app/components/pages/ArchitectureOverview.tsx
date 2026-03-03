@@ -223,7 +223,7 @@ export function ArchitectureOverview() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 + i * 0.1 }}
-              className="bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-2xl p-6"
+              className="bg-white/[0.03] border border-white/5 rounded-2xl p-6"
             >
               <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-4">
                 <p.icon className="w-5 h-5 text-emerald-400" />
@@ -255,7 +255,7 @@ export function ArchitectureOverview() {
             ].map((item, i, arr) => (
               <div key={item.step} className="flex items-center gap-3 lg:gap-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-xs text-indigo-300">
+                  <div className="w-8 h-8 rounded-full bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-xs text-indigo-300">
                     {item.step}
                   </div>
                   <div>
