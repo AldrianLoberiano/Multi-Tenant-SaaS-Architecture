@@ -158,7 +158,7 @@ export function BillingFlow() {
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-[10px] bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-[10px] bg-purple-500 text-white">
                   Most Popular
                 </div>
               )}
@@ -227,7 +227,7 @@ export function BillingFlow() {
             {billingSteps.map((step, i) => (
               <div key={step.step} className="flex gap-4">
                 <div className="flex flex-col items-center">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 border border-blue-500/30 flex items-center justify-center text-xs text-blue-300 shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-xs text-blue-300 shrink-0">
                     {step.step}
                   </div>
                   {i < billingSteps.length - 1 && (
