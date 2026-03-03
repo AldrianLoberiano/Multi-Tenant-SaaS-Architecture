@@ -7,6 +7,7 @@ import { ApiStructure } from "./components/pages/ApiStructure";
 import { BillingFlow } from "./components/pages/BillingFlow";
 import { ScalingStrategy } from "./components/pages/ScalingStrategy";
 import { AdminDashboard } from "./components/pages/AdminDashboard";
+import { WebDesign } from "./components/pages/WebDesign";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: "billing", Component: BillingFlow },
       { path: "scaling", Component: ScalingStrategy },
       { path: "dashboard", Component: AdminDashboard },
+      { path: "webdesign", Component: WebDesign },
     ],
   },
 ]);
