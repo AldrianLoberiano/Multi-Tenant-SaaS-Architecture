@@ -8,6 +8,7 @@ import {
   CreditCard,
   Server,
   BarChart3,
+  Paintbrush,
   Menu,
   X,
   Zap,
@@ -17,6 +18,7 @@ import { motion, AnimatePresence } from "motion/react";
 
 const navItems = [
   { path: "/", label: "Architecture", icon: LayoutDashboard, color: "#6366f1" },
+  { path: "/webdesign", label: "Web Design", icon: Paintbrush, color: "#f43f5e" },
   { path: "/schema", label: "Database Schema", icon: Database, color: "#8b5cf6" },
   { path: "/structure", label: "Folder Structure", icon: FolderTree, color: "#a855f7" },
   { path: "/api", label: "REST API", icon: Globe, color: "#d946ef" },
