@@ -15,7 +15,6 @@ import {
   Globe,
   Cpu,
   Cloud,
-  Paintbrush,
 } from "lucide-react";
 
 const fadeUp = {
@@ -25,15 +24,15 @@ const fadeUp = {
 
 const layers = [
   {
-    title: "Design",
+    title: "Client Layer",
     color: "#6366f1",
-    icon: Paintbrush,
+    icon: Monitor,
     items: [
-      "Figma (UI/UX Design)",
-      "Tailwind CSS (Design System)",
-      "Framer Motion (Animations)",
-      "Responsive Layout (Mobile-first)",
-      "Dark Mode & Theming",
+      "Next.js 14 (App Router)",
+      "TypeScript + Tailwind CSS",
+      "React Query (data fetching)",
+      "Zustand (client state)",
+      "Socket.io Client (real-time)",
     ],
   },
   {
