@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Heart, ArrowUpRight, Paintbrush } from "lucide-react";
-import { ImageWithFallback } from "@/app/components/model/ImageWithFallback";
+import { ImageWithFallback } from "../model/ImageWithFallback";
 
 const scheduleproImg = "/images/schedulepro_Saas.png";
 
