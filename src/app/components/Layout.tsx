@@ -52,7 +52,7 @@ export function Layout() {
       >
         <div className="p-6 border-b border-white/5">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-indigo-500 flex items-center justify-center">
               <Zap className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -97,7 +97,7 @@ export function Layout() {
         </nav>
 
         <div className="p-4 border-t border-white/5">
-          <div className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-xl p-4">
+          <div className="bg-indigo-500/10 border border-indigo-500/20 rounded-xl p-4">
             <p className="text-xs text-indigo-300/80">Tech Stack</p>
             <p className="text-[11px] text-white/40 mt-1">
               Next.js · NestJS · PostgreSQL · Redis · Docker
